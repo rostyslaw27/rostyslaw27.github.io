@@ -1,7 +1,8 @@
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
     closeElem = document.querySelector('.menu__close'),
-    links = document.querySelectorAll('.menu__link a');
+    links = document.querySelectorAll('.menu__link a'),
+    form = document.querySelector('.contacts_form');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -24,4 +25,8 @@ links.forEach((elem) => {
     elem.addEventListener('click', () => {
         menu.classList.remove('active');
     })
+})
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
 })

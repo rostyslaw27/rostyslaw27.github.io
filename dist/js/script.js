@@ -2,7 +2,7 @@ const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
     closeElem = document.querySelector('.menu__close'),
     links = document.querySelectorAll('.menu__link a'),
-    form = document.querySelector('.contacts_form');
+    form = document.querySelector('.contacts__form');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -29,4 +29,5 @@ links.forEach((elem) => {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
+    form.append('Mailing currently doesn`t working')
 })

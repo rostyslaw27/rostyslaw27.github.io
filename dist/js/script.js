@@ -29,5 +29,5 @@ links.forEach((elem) => {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
-    form.append('Mailing currently doesn`t working')
+    form.append('Sending mail currently doesn`t work')
 })

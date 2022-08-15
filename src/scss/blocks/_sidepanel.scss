@@ -10,7 +10,7 @@
   z-index: 3;
   &__link {
     &:hover {
-      svg {
+      img {
         transition: all 1s;
         transform: rotate(90deg);
       }

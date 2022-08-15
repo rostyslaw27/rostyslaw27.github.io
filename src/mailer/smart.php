@@ -18,7 +18,7 @@ $mail->Password = '';
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('martynykrostyslaw@gmail.com', 'Pulse');   // От кого письмо 
+$mail->setFrom('martynykrostyslaw@gmail.com', 'Pulse');
 $mail->addAddress('martynykros@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -28,12 +28,12 @@ $mail->addAddress('martynykros@gmail.com');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Данные';
+$mail->Subject = 'Info';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
-	Имя: ' . $name . ' <br>
-	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '';
+	The user left the data <br> 
+	Name: ' . $name . ' <br>
+	Phone: ' . $phone . '<br>
+	Email: ' . $email . '';
 
 if(!$mail->send()) {
     return false;
